@@ -1,7 +1,9 @@
 Summary:	Program for controlling SCSI media changers and tape drives
 Summary(pl):	Program do obsЁugi zmieniarek oraz robotСw ta╤mowych na SCSI
+Summary(ru):	Управляет роботом в автозагрузчиках для ленточных устройств DDS
+Summary(uk):	Керу╓ роботом в автозавантажувачах для стр╕чкових пристро╖в DDS
 Name:		mtx
-Version:	1.2.15
+Version:	1.3.1
 Release:	1
 License:	GPL
 Group:		Applications/System
@@ -19,6 +21,14 @@ mechanism of autoloaders and tape libraries.
 %description -l pl
 MTX jest zestawem programСw do kontrolowania napЙdСw ta╤mowych oraz
 mechanizmСw robotСw Ёadowarek oraz bibliotek ta╤mowych.
+
+%description -l ru
+Программа MTX управляет роботизированным механизмом в автозагрузчиках
+и ленточных библиотеках.
+
+%description -l uk
+Програма MTX керу╓ роботизованим механ╕змом в автозавантажувачах та
+стр╕чкових б╕бл╕отеках.
 
 %prep
 %setup  -q
