@@ -26,7 +26,7 @@ mechanizmów robotów ³adowarek oraz bibliotek ta¶mowych.
 
 %build
 aclocal
-autoconf
+%{__autoconf}
 %configure
 %{__make}
 
