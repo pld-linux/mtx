@@ -25,7 +25,7 @@ mechanizmów robotów ³adowarek oraz bibliotek ta¶mowych.
 %patch0 -p1
 
 %build
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure
 %{__make}
