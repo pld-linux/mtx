@@ -35,13 +35,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf COMPATABILITY CHANGES
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz mtxl.README.html
+%doc COMPATABILITY CHANGES mtxl.README.html
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man1/*
