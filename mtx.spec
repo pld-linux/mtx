@@ -1,13 +1,15 @@
 Summary:	Program for controlling SCSI media changers and tape drives
 Summary(pl):	Program do obs³ugi zmieniarek oraz robotów ta¶mowych na SCSI
 Name:		mtx
-Version:	1.2.14
+Version:	1.2.15
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-Makefile.patch
 URL:		http://mtx.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
