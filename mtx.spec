@@ -8,6 +8,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	f7edc6075376735d3e701740d028a5ab
 Patch0:		%{name}-Makefile.patch
 URL:		http://mtx.sourceforge.net/
 BuildRequires:	autoconf
