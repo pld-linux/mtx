@@ -7,7 +7,7 @@ Version:	1.3.1
 Release:	1
 License:	GPL
 Group:		Applications/System
-Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-Makefile.patch
 URL:		http://mtx.sourceforge.net/
 BuildRequires:	autoconf
