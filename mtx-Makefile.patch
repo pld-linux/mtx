@@ -1,0 +1,26 @@
+diff -Naur mtx-1.2.14/Makefile.in mtx-1.2.14-p/Makefile.in
+--- mtx-1.2.14/Makefile.in	Fri Nov 16 17:45:09 2001
++++ mtx-1.2.14-p/Makefile.in	Tue Jan 15 23:04:45 2002
+@@ -25,6 +25,7 @@
+ INSTALL_DOC = $(INSTALL) -m 644
+ INSTALL_BIN = $(INSTALL) -m 755
+ INSTALL_DIR = $(INSTALL) -m 755 -d
++DESTDIR =
+ 
+ prefix		= @prefix@
+ exec_prefix	= @exec_prefix@
+@@ -87,10 +88,10 @@
+ 	for file in $(BINS); do \
+ 	strip $$file;	\
+ 	done	
+-	$(INSTALL_DIR) $(sbindir)
+-	$(INSTALL_BIN) $(BINS) $(sbindir)
+-	$(INSTALL_DIR) $(mandir) $(mandir)/man1
+-	$(INSTALL_DOC) mtx.1 tapeinfo.1 scsitape.1 loaderinfo.1 $(mandir)/man1
++	$(INSTALL_DIR) $(DESTDIR)$(sbindir)
++	$(INSTALL_BIN) $(BINS) $(DESTDIR)$(sbindir)
++	$(INSTALL_DIR) $(DESTDIR)$(mandir) $(DESTDIR)$(mandir)/man1
++	$(INSTALL_DOC) mtx.1 tapeinfo.1 scsitape.1 loaderinfo.1 $(DESTDIR)$(mandir)/man1
+ 
+ clean:
+ 	rm -f *.o *~
