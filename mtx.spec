@@ -7,7 +7,7 @@ Version:	1.3.3
 Release:	2
 License:	GPL
 Group:		Applications/System
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/mtx/%{name}-%{version}.tar.gz
 # Source0-md5:	069c47d2af6b057cf2a123e6e56f79e6
 Patch0:		%{name}-Makefile.patch
 Patch1:		%{name}-gkh.patch
@@ -33,7 +33,7 @@ mechanizmów robotów ³adowarek oraz bibliotek ta¶mowych.
 ÓÔÒ¦ŞËÏ×ÉÈ Â¦ÂÌ¦ÏÔÅËÁÈ.
 
 %prep
-%setup  -q
+%setup -q
 %patch0 -p1
 %patch1 -p1
 
