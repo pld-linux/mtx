@@ -9,7 +9,7 @@ Epoch:		1
 License:	GPL
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/mtx/%{name}-%{version}rel.tar.gz
-# Source0-md5:	069c47d2af6b057cf2a123e6e56f79e6
+# Source0-md5:	d60f7b003edc6f9d34753b8f6c447515
 Patch0:		%{name}-Makefile.patch
 Patch1:		%{name}-gkh.patch
 URL:		http://mtx.sourceforge.net/
