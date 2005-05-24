@@ -9,22 +9,18 @@ diff -burN mtx-1.3.3.orig/Makefile.in mtx-1.3.3/Makefile.in
  
  prefix		= @prefix@
  exec_prefix	= @exec_prefix@
-@@ -85,14 +86,14 @@
- all:	$(BINS)
- 
- install: $(BINS)
-+	$(INSTALL_DIR) $(DESTDIR)$(sbindir)
+@@ -85,10 +86,10 @@
  	for file in $(BINS); do \
  	strip $$file ;	\
--	$(INSTALL_BIN) $$file $(sbindir) ; \
-+	$(INSTALL_BIN) $$file $(DESTDIR)$(sbindir) ; \
  	done	
 -	$(INSTALL_DIR) $(sbindir)
++	$(INSTALL_DIR) $(DESTDIR)$(sbindir)
+-	$(INSTALL_BIN) $(BINS) $(sbindir)
++	$(INSTALL_BIN) $(BINS) $(DESTDIR)$(sbindir)
 -	$(INSTALL_DIR) $(mandir) $(mandir)/man1
 +	$(INSTALL_DIR) $(DESTDIR)$(mandir) $(DESTDIR)$(mandir)/man1
- 	for file in mtx.1 tapeinfo.1 scsitape.1 loaderinfo.1 ; do \
--	$(INSTALL_DOC) "$$file"  $(mandir)/man1 ;		  \
-+	$(INSTALL_DOC) "$$file"  $(DESTDIR)$(mandir)/man1 ;	  \
- 	done
+-	$(INSTALL_DOC) mtx.1 tapeinfo.1 scsitape.1 loaderinfo.1 $(mandir)/man1
++	$(INSTALL_DOC) mtx.1 tapeinfo.1 scsitape.1 loaderinfo.1 $(DESTDIR)$(mandir)/man1
  
  clean:
+ 	rm -f *.o *~
