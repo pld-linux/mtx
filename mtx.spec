@@ -3,11 +3,12 @@ Summary(pl):	Program do obsЁugi zmieniarek oraz robotСw ta╤mowych na SCSI
 Summary(ru):	Управляет роботом в автозагрузчиках для ленточных устройств DDS
 Summary(uk):	Керу╓ роботом в автозавантажувачах для стр╕чкових пристро╖в DDS
 Name:		mtx
-Version:	1.3.3
-Release:	2
+Version:	1.2.17
+Release:	1
+Epoch:		1
 License:	GPL
 Group:		Applications/System
-Source0:	http://dl.sourceforge.net/mtx/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/mtx/%{name}-%{version}rel.tar.gz
 # Source0-md5:	069c47d2af6b057cf2a123e6e56f79e6
 Patch0:		%{name}-Makefile.patch
 Patch1:		%{name}-gkh.patch
@@ -33,7 +34,7 @@ mechanizmСw robotСw Ёadowarek oraz bibliotek ta╤mowych.
 стр╕чкових б╕бл╕отеках.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}rel
 %patch0 -p1
 %patch1 -p1
 
