@@ -1,7 +1,7 @@
 Summary:	Program for controlling SCSI media changers and tape drives
-Summary(pl):	Program do obsЁugi zmieniarek oraz robotСw ta╤mowych na SCSI
-Summary(ru):	Управляет роботом в автозагрузчиках для ленточных устройств DDS
-Summary(uk):	Керу╓ роботом в автозавантажувачах для стр╕чкових пристро╖в DDS
+Summary(pl.UTF-8):   Program do obsе┌ugi zmieniarek oraz robotцЁw taе⌡mowych na SCSI
+Summary(ru.UTF-8):   пёп©я─п╟п╡п╩я▐п╣я┌ я─п╬п╠п╬я┌п╬п╪ п╡ п╟п╡я┌п╬п╥п╟пЁя─я┐п╥я┤п╦п╨п╟я┘ п╢п╩я▐ п╩п╣п╫я┌п╬я┤п╫я▀я┘ я┐я│я┌я─п╬п╧я│я┌п╡ DDS
+Summary(uk.UTF-8):   п п╣я─я┐я■ я─п╬п╠п╬я┌п╬п╪ п╡ п╟п╡я┌п╬п╥п╟п╡п╟п╫я┌п╟п╤я┐п╡п╟я┤п╟я┘ п╢п╩я▐ я│я┌я─я√я┤п╨п╬п╡п╦я┘ п©я─п╦я│я┌я─п╬я≈п╡ DDS
 Name:		mtx
 Version:	1.2.17
 Release:	1
@@ -21,17 +21,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 MTX is a set of programs for controlling tape drives and the robotic
 mechanism of autoloaders and tape libraries.
 
-%description -l pl
-MTX jest zestawem programСw do kontrolowania napЙdСw ta╤mowych oraz
-mechanizmСw robotСw Ёadowarek oraz bibliotek ta╤mowych.
+%description -l pl.UTF-8
+MTX jest zestawem programцЁw do kontrolowania napд≥dцЁw taе⌡mowych oraz
+mechanizmцЁw robotцЁw е┌adowarek oraz bibliotek taе⌡mowych.
 
-%description -l ru
-Программа MTX управляет роботизированным механизмом в автозагрузчиках
-и ленточных библиотеках.
+%description -l ru.UTF-8
+п÷я─п╬пЁя─п╟п╪п╪п╟ MTX я┐п©я─п╟п╡п╩я▐п╣я┌ я─п╬п╠п╬я┌п╦п╥п╦я─п╬п╡п╟п╫п╫я▀п╪ п╪п╣я┘п╟п╫п╦п╥п╪п╬п╪ п╡ п╟п╡я┌п╬п╥п╟пЁя─я┐п╥я┤п╦п╨п╟я┘
+п╦ п╩п╣п╫я┌п╬я┤п╫я▀я┘ п╠п╦п╠п╩п╦п╬я┌п╣п╨п╟я┘.
 
-%description -l uk
-Програма MTX керу╓ роботизованим механ╕змом в автозавантажувачах та
-стр╕чкових б╕бл╕отеках.
+%description -l uk.UTF-8
+п÷я─п╬пЁя─п╟п╪п╟ MTX п╨п╣я─я┐я■ я─п╬п╠п╬я┌п╦п╥п╬п╡п╟п╫п╦п╪ п╪п╣я┘п╟п╫я√п╥п╪п╬п╪ п╡ п╟п╡я┌п╬п╥п╟п╡п╟п╫я┌п╟п╤я┐п╡п╟я┤п╟я┘ я┌п╟
+я│я┌я─я√я┤п╨п╬п╡п╦я┘ п╠я√п╠п╩я√п╬я┌п╣п╨п╟я┘.
 
 %prep
 %setup -q -n %{name}-%{version}rel
