@@ -1,7 +1,7 @@
 Summary:	Program for controlling SCSI media changers and tape drives
-Summary(pl.UTF-8):   Program do obsługi zmieniarek oraz robotów taśmowych na SCSI
-Summary(ru.UTF-8):   Управляет роботом в автозагрузчиках для ленточных устройств DDS
-Summary(uk.UTF-8):   Керує роботом в автозавантажувачах для стрічкових пристроїв DDS
+Summary(pl.UTF-8):	Program do obsługi zmieniarek oraz robotów taśmowych na SCSI
+Summary(ru.UTF-8):	Управляет роботом в автозагрузчиках для ленточных устройств DDS
+Summary(uk.UTF-8):	Керує роботом в автозавантажувачах для стрічкових пристроїв DDS
 Name:		mtx
 Version:	1.2.17
 Release:	1
