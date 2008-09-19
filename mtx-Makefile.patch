@@ -1,26 +1,20 @@
-diff -burN mtx-1.3.3.orig/Makefile.in mtx-1.3.3/Makefile.in
---- mtx-1.3.3.orig/Makefile.in	Fri Feb 21 18:56:28 2003
-+++ mtx-1.3.3/Makefile.in	Tue Jul 22 15:06:08 2003
-@@ -26,6 +26,7 @@
- INSTALL_DOC = $(INSTALL) -m 644
- INSTALL_BIN = $(INSTALL) -m 755
- INSTALL_DIR = $(INSTALL) -m 755 -d
-+DEST = 
+--- mtx-1.3.12/Makefile.in	2008-09-19 11:14:14.717548166 +0200
++++ mtx-1.3.12/Makefile.in.new	2008-09-19 11:21:51.227682021 +0200
+@@ -110,13 +110,13 @@
+ dbgs: $(DBGS)
  
- prefix		= @prefix@
- exec_prefix	= @exec_prefix@
-@@ -85,10 +86,10 @@
- 	for file in $(BINS); do \
- 	strip $$file ;	\
- 	done	
+ install: $(BINS)
 -	$(INSTALL_DIR) $(sbindir)
 +	$(INSTALL_DIR) $(DESTDIR)$(sbindir)
--	$(INSTALL_BIN) $(BINS) $(sbindir)
-+	$(INSTALL_BIN) $(BINS) $(DESTDIR)$(sbindir)
+ 	for file in $(BINS); do \
+-	$(INSTALL_BIN) "$$file" $(sbindir) ; \
++	$(INSTALL_BIN) "$$file" $(DESTDIR)$(sbindir) ; \
+ 	done	
 -	$(INSTALL_DIR) $(mandir) $(mandir)/man1
 +	$(INSTALL_DIR) $(DESTDIR)$(mandir) $(DESTDIR)$(mandir)/man1
--	$(INSTALL_DOC) mtx.1 tapeinfo.1 scsitape.1 loaderinfo.1 $(mandir)/man1
-+	$(INSTALL_DOC) mtx.1 tapeinfo.1 scsitape.1 loaderinfo.1 $(DESTDIR)$(mandir)/man1
+ 	for file in mtx.1 tapeinfo.1 scsitape.1 scsieject.1 loaderinfo.1 ; do \
+-	$(INSTALL_DOC) "$$file"  $(mandir)/man1 ; \
++	$(INSTALL_DOC) "$$file" $(DESTDIR)$(mandir)/man1 ; \
+ 	done
  
  clean:
- 	rm -f *.o *~
