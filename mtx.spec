@@ -3,15 +3,14 @@ Summary(pl.UTF-8):	Program do obsługi zmieniarek oraz robotów taśmowych na SC
 Summary(ru.UTF-8):	Управляет роботом в автозагрузчиках для ленточных устройств DDS
 Summary(uk.UTF-8):	Керує роботом в автозавантажувачах для стрічкових пристроїв DDS
 Name:		mtx
-Version:	1.2.17
-Release:	1
+Version:	1.3.12
+Release:	1	
 Epoch:		1
 License:	GPL
 Group:		Applications/System
-Source0:	http://dl.sourceforge.net/mtx/%{name}-%{version}rel.tar.gz
-# Source0-md5:	d60f7b003edc6f9d34753b8f6c447515
+Source0:	http://dl.sourceforge.net/mtx/%{name}-%{version}.tar.gz
+# Source0-md5:	ce8f0e44671fb0c7d9ec30bb0bfa8b5c
 Patch0:		%{name}-Makefile.patch
-Patch1:		%{name}-gkh.patch
 URL:		http://mtx.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -34,9 +33,8 @@ mechanizmów robotów ładowarek oraz bibliotek taśmowych.
 стрічкових бібліотеках.
 
 %prep
-%setup -q -n %{name}-%{version}rel
+%setup -q 
 %patch0 -p1
-%patch1 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
