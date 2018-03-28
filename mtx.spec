@@ -4,7 +4,7 @@ Summary(ru.UTF-8):	Управляет роботом в автозагрузчи
 Summary(uk.UTF-8):	Керує роботом в автозавантажувачах для стрічкових пристроїв DDS
 Name:		mtx
 Version:	1.3.12
-Release:	1	
+Release:	2
 Epoch:		1
 License:	GPL
 Group:		Applications/System
