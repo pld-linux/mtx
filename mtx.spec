@@ -4,13 +4,15 @@ Summary(ru.UTF-8):	Управляет роботом в автозагрузчи
 Summary(uk.UTF-8):	Керує роботом в автозавантажувачах для стрічкових пристроїв DDS
 Name:		mtx
 Version:	1.3.12
-Release:	3
+Release:	4
 Epoch:		1
 License:	GPL
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/mtx/%{name}-%{version}.tar.gz
 # Source0-md5:	ce8f0e44671fb0c7d9ec30bb0bfa8b5c
 Patch0:		%{name}-Makefile.patch
+# from Fedora (mtx-1.3.12-bool.patch) / Debian (011-gdd15_c23_bool.patch)
+Patch1:		%{name}-c23-bool.patch
 URL:		http://mtx.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -35,6 +37,7 @@ mechanizmów robotów ładowarek oraz bibliotek taśmowych.
 %prep
 %setup -q 
 %patch -P0 -p1
+%patch -P1 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
