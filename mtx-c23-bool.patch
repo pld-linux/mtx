@@ -1,0 +1,12 @@
+--- mtx-1.3.12/mtx.h.orig	2008-08-20 22:02:54.000000000 +0200
++++ mtx-1.3.12/mtx.h	2024-11-20 00:00:00.000000000 +0100
+@@ -222,7 +222,8 @@
+ #define Input   0
+ #define Output  1
+ #else
+-typedef enum { false, true } boolean;
++#include <stdbool.h>
++typedef bool boolean;
+
+ typedef enum { Input, Output } Direction_T;
+ #endif
